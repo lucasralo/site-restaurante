@@ -1,115 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Delícia do Sabor</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Restaurante Delícia do Sabor</title>
+ <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-yellow-100 text-gray-800 font-sans">
-  <header class="bg-gradient-to-r from-orange-400 to-red-500 text-white py-8 px-4 text-center">
-    <h1 class="text-4xl font-bold mb-2">Restaurante Delícia do Sabor</h1>
-    <p class="text-lg">Comida caseira e saborosa feita com carinho!</p>
-    <div class="mt-4">
-      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b18827ce-8833-4fdf-b595-0ac39fc918ca.png" alt="Vibrant restaurant interior with wooden tables, warm lighting, and Brazilian-themed decor including colorful flags and traditional plates" class="w-full max-h-64 object-cover rounded-lg shadow-lg" />
-    </div>
-  </header>
-  <section id="menu" class="py-8 px-4 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-4">Cardápio</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-6">
-  <!-- Quadro 1: Feijoada completa -->
-  <div class="bg-white p-8 rounded-lg shadow-lg">
-    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e9de86b-fb9f-4287-967a-c5eb0a59614a.png" alt="Feijoada completa com feijão preto, carnes, arroz e couve" class="w-full h-64 object-cover rounded-md mb-6" />
-    <h3 class="text-2xl font-semibold mb-4">Feijoada completa - R$ 39,90</h3>
-    <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
-      <li>Feijão preto</li>
-      <li>Carnes variadas</li>
-      <li>Arroz branco</li>
-      <li>Couve refogada</li>
-      <li>Laranja fatiada</li>
-    </ul>
-  </div>
-
-  <!-- Quadro 2: Frango grelhado com arroz e legumes -->
-  <div class="bg-white p-8 rounded-lg shadow-lg">
-    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Frango grelhado com arroz e legumes" class="w-full h-64 object-cover rounded-md mb-6" />
-    <h3 class="text-2xl font-semibold mb-4">Frango grelhado com arroz e legumes - R$ 29,90</h3>
-    <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
-      <li>Peito de frango grelhado</li>
-      <li>Arroz branco</li>
-      <li>Legumes salteados</li>
-      <li>Molho especial</li>
-    </ul>
-  </div>
-
-  <!-- Quadro 3: Salada tropical -->
-  <div class="bg-white p-8 rounded-lg shadow-lg">
-    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Salada tropical com frutas e folhas verdes" class="w-full h-64 object-cover rounded-md mb-6" />
-    <h3 class="text-2xl font-semibold mb-4">Salada tropical - R$ 22,90</h3>
-    <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
-      <li>Folhas verdes</li>
-      <li>Manga</li>
-      <li>Abacaxi</li>
-      <li>Castanhas</li>
-      <li>Molho cítrico</li>
-    </ul>
-  </div>
-
-  <!-- Quadro 4: Brigadeiro gourmet -->
-  <div class="bg-white p-8 rounded-lg shadow-lg">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Brigadeiro gourmet" class="w-full h-64 object-cover rounded-md mb-6" />
-    <h3 class="text-2xl font-semibold mb-4">Brigadeiro gourmet - R$ 12,90</h3>
-    <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
-      <li>Chocolate belga</li>
-      <li>Granulado especial</li>
-      <li>Recheio cremoso</li>
-    </ul>
-  </div>
+ <header class="bg-gradient-to-r from-orange-400 to-red-500 text-white py-8 px-4 text-center">
+   <h1 class="text-4xl font-bold mb-2">Restaurante Delícia do Sabor</h1>
+   <p class="text-lg">Comida caseira e saborosa feita com carinho!</p>
+   <div class="mt-4">
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b18827ce-8833-4fdf-b595-0ac39fc918ca.png" alt="Vibrant restaurant interior with wooden tables, warm lighting, and Brazilian-themed decor including colorful flags and traditional plates" class="w-full max-h-64 object-cover rounded-lg shadow-lg" />
+   </div>
+ </header>
+ <section id="menu" class="py-8 px-4 max-w-4xl mx-auto">
+   <h2 class="text-3xl font-semibold text-center mb-4">Cardápio</h2>
+   <div class="grid md:grid-cols-2 gap-6">
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-6">
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e9de86b-fb9f-4287-967a-c5eb0a59614a.png" alt="Feijoada completa com feijão preto, carnes, arroz e couve" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Feijoada completa - R$ 39,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Feijão preto</li>
+     <li>Carnes variadas</li>
+     <li>Arroz branco</li>
+     <li>Couve refogada</li>
+     <li>Laranja fatiada</li>
+   </ul>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Frango grelhado com arroz e legumes" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Frango grelhado com arroz e legumes - R$ 29,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Peito de frango grelhado</li>
+     <li>Arroz branco</li>
+     <li>Legumes salteados</li>
+     <li>Molho especial</li>
+   </ul>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Salada tropical com frutas e folhas verdes" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Salada tropical - R$ 22,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Folhas verdes</li>
+     <li>Manga</li>
+     <li>Abacaxi</li>
+     <li>Castanhas</li>
+     <li>Molho cítrico</li>
+   </ul>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Brigadeiro gourmet" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Brigadeiro gourmet - R$ 12,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Chocolate belga</li>
+     <li>Granulado especial</li>
+     <li>Recheio cremoso</li>
+   </ul>
+ </div>
 </div>
-        </ul>
-      </div>
-     <div class="bg-white p-4 rounded-lg shadow-md">
-  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b56f16c7-a017-4669-88f1-6c8232b72161.png" alt="Delicious grilled chicken breast with steaming rice, colorful steamed vegetables, and a side of fresh salad garnished with herbs" class="w-full h-48 object-cover rounded-md mb-4" />
-  <p class="text-sm text-gray-600">Prato principal saudável com toques naturais.</p>
-  <p class="mt-4 text-sm max-w-xs mx-auto font-semibold">Ingredientes:</p>
-  <ul class="list-disc list-inside text-sm max-w-xs mx-auto text-gray-700">
-    <li>Peito de frango (sem pele)</li>
-    <li>Arroz branco ou integral</li>
-    <li>Brócolis</li>
-    <li>Cenoura</li>
-    <li>Abobrinha</li>
-    <li>Alface</li>
-    <li>Tomate cereja</li>
-    <li>Cebola roxa</li>
-    <li>Azeite de oliva extra virgem</li>
-    <li>Alho</li>
-    <li>Sal e pimenta-do-reino a gosto</li>
-    <li>Ervas frescas (salsa, cebolinha, manjericão)</li>
-  </ul>
-</div>
-      </div>
-    </div>
-  </section>
-  <section id="localizacao" class="py-8 px-4 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-4">Localização</h2>
+       </ul>
+     </div>
     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d139899-d138-481a-97c1-182ce1e98e81.png" alt="Detailed street map showing Avenida Brasil in Bairro Jardim, Cidade Y, with markers for restaurants and nearby landmarks in a vibrant urban setting" class="w-full h-48 object-cover rounded-md mb-4" />
-      <p class="text-center">Avenida Brasil, 456 - Bairro Jardim, Cidade SP</p>
-    </div>
-  </section>
-  <section id="contato" class="py-8 px-4 bg-gray-800 text-white max-w-4xl mx-auto rounded-lg">
-    <h2 class="text-3xl font-semibold text-center mb-4">Contato</h2>
-    <div class="text-center space-y-2">
-      <p>Telefone: (21) 12345-6789</p>
-      <p>Instagram: @deliciadosabor</p>
-      <p>Email: delíciadosabor@gmail.com</p>
-      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f27b0c9-0ede-464c-9329-4146cefcf03a.png" alt="Contact image showing a friendly chef waving, with contact details overlay and tropical fruit backdrop symbolizing Brazilian hospitality" class="w-full h-24 object-cover rounded-md mt-4" />
-    </div>
-  </section>
-  <footer class="bg-gray-900 text-white py-4 text-center">
-    <p>© 2025 Restaurante delícia do Sabor</p>
-  </footer>
+ <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b56f16c7-a017-4669-88f1-6c8232b72161.png" alt="Delicious grilled chicken breast with steaming rice, colorful steamed vegetables, and a side of fresh salad garnished with herbs" class="w-full h-48 object-cover rounded-md mb-4" />
+ <p class="text-sm text-gray-600">Prato principal saudável com toques naturais.</p>
+ <p class="mt-4 text-sm max-w-xs mx-auto font-semibold">Ingredientes:</p>
+ <ul class="list-disc list-inside text-sm max-w-xs mx-auto text-gray-700">
+   <li>Peito de frango (sem pele)</li>
+   <li>Arroz branco ou integral</li>
+   <li>Brócolis</li>
+   <li>Cenoura</li>
+   <li>Abobrinha</li>
+   <li>Alface</li>
+   <li>Tomate cereja</li>
+   <li>Cebola roxa</li>
+   <li>Azeite de oliva extra virgem</li>
+   <li>Alho</li>
+   <li>Sal e pimenta-do-reino a gosto</li>
+   <li>Ervas frescas (salsa, cebolinha, manjericão)</li>
+ </ul>
+</div>
+     </div>
+   </div>
+ </section>
+ <section id="localizacao" class="py-8 px-4 max-w-4xl mx-auto">
+   <h2 class="text-3xl font-semibold text-center mb-4">Localização</h2>
+   <div class="bg-white p-4 rounded-lg shadow-md">
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d139899-d138-481a-97c1-182ce1e98e81.png" alt="Detailed street map showing Avenida Brasil in Bairro Jardim, Cidade Y, with markers for restaurants and nearby landmarks in a vibrant urban setting" class="w-full h-48 object-cover rounded-md mb-4" />
+     <p class="text-center">Avenida Brasil, 456 - Bairro Jardim, Cidade SP</p>
+   </div>
+ </section>
+ <section id="contato" class="py-8 px-4 bg-gray-800 text-white max-w-4xl mx-auto rounded-lg">
+   <h2 class="text-3xl font-semibold text-center mb-4">Contato</h2>
+   <div class="text-center space-y-2">
+     <p>Telefone: (21) 12345-6789</p>
+     <p>Instagram: @deliciadosabor</p>
+     <p>Email: delíciadosabor@gmail.com</p>
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f27b0c9-0ede-464c-9329-4146cefcf03a.png" alt="Contact image showing a friendly chef waving, with contact details overlay and tropical fruit backdrop symbolizing Brazilian hospitality" class="w-full h-24 object-cover rounded-md mt-4" />
+   </div>
+ </section>
+ <footer class="bg-gray-900 text-white py-4 text-center">
+   <p>© 2025 Restaurante delícia do Sabor</p>
+ </footer>
+</body>
+</html>
+</content>
+</create_file>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Restaurante Delícia do Sabor</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-100 text-gray-800 font-sans">
+ <header class="bg-gradient-to-r from-orange-400 to-red-500 text-white py-8 px-4 text-center">
+   <h1 class="text-4xl font-bold mb-2">Restaurante Delícia do Sabor</h1>
+   <p class="text-lg">Comida caseira e saborosa feita com carinho!</p>
+   <div class="mt-4">
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b18827ce-8833-4fdf-b595-0ac39fc918ca.png" alt="Vibrant restaurant interior with wooden tables, warm lighting, and Brazilian-themed decor including colorful flags and traditional plates" class="w-full max-h-64 object-cover rounded-lg shadow-lg" />
+   </div>
+ </header>
+ <section id="menu" class="py-8 px-4 max-w-4xl mx-auto">
+   <h2 class="text-3xl font-semibold text-center mb-4">Cardápio</h2>
+   <div class="grid md:grid-cols-2 gap-6">
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-6">
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e9de86b-fb9f-4287-967a-c5eb0a59614a.png" alt="Feijoada completa com feijão preto, carnes, arroz e couve" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Feijoada completa - R$ 39,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Feijão preto</li>
+     <li>Carnes variadas</li>
+     <li>Arroz branco</li>
+     <li>Couve refogada</li>
+     <li>Laranja fatiada</li>
+   </ul>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Frango grelhado com arroz e legumes" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Frango grelhado com arroz e legumes - R$ 29,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Peito de frango grelhado</li>
+     <li>Arroz branco</li>
+     <li>Legumes salteados</li>
+     <li>Molho especial</li>
+   </ul>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Salada tropical com frutas e folhas verdes" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Salada tropical - R$ 22,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Folhas verdes</li>
+     <li>Manga</li>
+     <li>Abacaxi</li>
+     <li>Castanhas</li>
+     <li>Molho cítrico</li>
+   </ul>
+ </div>
+ <div class="bg-white p-8 rounded-lg shadow-lg">
+   <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Brigadeiro gourmet" class="w-full h-64 object-cover rounded-md mb-6" />
+   <h3 class="text-2xl font-semibold mb-4">Brigadeiro gourmet - R$ 12,90</h3>
+   <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+     <li>Chocolate belga</li>
+     <li>Granulado especial</li>
+     <li>Recheio cremoso</li>
+   </ul>
+ </div>
+</div>
+       </ul>
+     </div>
+    <div class="bg-white p-4 rounded-lg shadow-md">
+ <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b56f16c7-a017-4669-88f1-6c8232b72161.png" alt="Delicious grilled chicken breast with steaming rice, colorful steamed vegetables, and a side of fresh salad garnished with herbs" class="w-full h-48 object-cover rounded-md mb-4" />
+ <p class="text-sm text-gray-600">Prato principal saudável com toques naturais.</p>
+ <p class="mt-4 text-sm max-w-xs mx-auto font-semibold">Ingredientes:</p>
+ <ul class="list-disc list-inside text-sm max-w-xs mx-auto text-gray-700">
+   <li>Peito de frango (sem pele)</li>
+   <li>Arroz branco ou integral</li>
+   <li>Brócolis</li>
+   <li>Cenoura</li>
+   <li>Abobrinha</li>
+   <li>Alface</li>
+   <li>Tomate cereja</li>
+   <li>Cebola roxa</li>
+   <li>Azeite de oliva extra virgem</li>
+   <li>Alho</li>
+   <li>Sal e pimenta-do-reino a gosto</li>
+   <li>Ervas frescas (salsa, cebolinha, manjericão)</li>
+ </ul>
+</div>
+     </div>
+   </div>
+ </section>
+ <section id="localizacao" class="py-8 px-4 max-w-4xl mx-auto">
+   <h2 class="text-3xl font-semibold text-center mb-4">Localização</h2>
+   <div class="bg-white p-4 rounded-lg shadow-md">
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d139899-d138-481a-97c1-182ce1e98e81.png" alt="Detailed street map showing Avenida Brasil in Bairro Jardim, Cidade Y, with markers for restaurants and nearby landmarks in a vibrant urban setting" class="w-full h-48 object-cover rounded-md mb-4" />
+     <p class="text-center">Avenida Brasil, 456 - Bairro Jardim, Cidade SP</p>
+   </div>
+ </section>
+ <section id="contato" class="py-8 px-4 bg-gray-800 text-white max-w-4xl mx-auto rounded-lg">
+   <h2 class="text-3xl font-semibold text-center mb-4">Contato</h2>
+   <div class="text-center space-y-2">
+     <p>Telefone: (21) 12345-6789</p>
+     <p>Instagram: @deliciadosabor</p>
+     <p>Email: delíciadosabor@gmail.com</p>
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f27b0c9-0ede-464c-9329-4146cefcf03a.png" alt="Contact image showing a friendly chef waving, with contact details overlay and tropical fruit backdrop symbolizing Brazilian hospitality" class="w-full h-24 object-cover rounded-md mt-4" />
+   </div>
+ </section>
+ <footer class="bg-gray-900 text-white py-4 text-center">
+   <p>© 2025 Restaurante delícia do Sabor</p>
+ </footer>
 </body>
 </html>
 </content>
