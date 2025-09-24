@@ -257,10 +257,3 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
-  #menu .grid-interno {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 1.5rem;
-  }
-  
