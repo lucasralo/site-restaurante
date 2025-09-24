@@ -4,92 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Delícia do Sabor</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-yellow-100 text-gray-800 font-sans">
+<body>
   <!-- Header -->
-  <header class="bg-gradient-to-r from-orange-400 to-red-500 text-white py-8 px-4 text-center">
-    <h1 class="text-4xl font-bold mb-2">Restaurante Delícia do Sabor</h1>
-    <p class="text-lg">Comida caseira e saborosa feita com carinho!</p>
-    <div class="mt-4">
-      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b18827ce-8833-4fdf-b595-0ac39fc918ca.png" 
-           alt="Vibrant restaurant interior with wooden tables, warm lighting, and Brazilian-themed decor including colorful flags and traditional plates" 
-           class="w-full h-64 object-cover rounded-lg shadow-lg" />
-    </div>
+  <header role="banner">
+    <h1>Restaurante Delícia do Sabor</h1>
+    <p>Comida caseira e saborosa feita com carinho!</p>
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b18827ce-8833-4fdf-b595-0ac39fc918ca.png" 
+         alt="Interior vibrante do restaurante com mesas de madeira, iluminação acolhedora e decoração temática brasileira, incluindo bandeiras coloridas e pratos tradicionais">
   </header>
 
   <!-- Seção Menu -->
-  <section id="menu" class="py-8 px-4 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-4">Cardápio</h2>
-    <div class="grid md:grid-cols-2 gap-6">
+  <section id="menu" role="region" aria-label="Cardápio">
+    <h2>Cardápio</h2>
+    <div class="grid-principal">
       <!-- Grid interno para os 4 pratos principais -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+      <div class="grid-interno">
         <!-- Feijoada -->
-        <div class="bg-white p-8 rounded-lg shadow-lg">
+        <article class="menu-card">
           <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e9de86b-fb9f-4287-967a-c5eb0a59614a.png" 
-               alt="Feijoada completa com feijão preto, carnes, arroz e couve" 
-               class="w-full h-64 object-cover rounded-md mb-6" />
-          <h3 class="text-2xl font-semibold mb-4">Feijoada completa - R$ 39,90</h3>
-          <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+               alt="Feijoada completa com feijão preto, carnes variadas, arroz branco e couve refogada">
+          <h3>Feijoada completa - R$ 39,90</h3>
+          <ul>
             <li>Feijão preto</li>
             <li>Carnes variadas</li>
             <li>Arroz branco</li>
             <li>Couve refogada</li>
             <li>Laranja fatiada</li>
           </ul>
-        </div>
+        </article>
 
         <!-- Frango grelhado -->
-        <div class="bg-white p-8 rounded-lg shadow-lg">
+        <article class="menu-card">
           <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" 
-               alt="Frango grelhado com arroz e legumes" 
-               class="w-full h-64 object-cover rounded-md mb-6" />
-          <h3 class="text-2xl font-semibold mb-4">Frango grelhado com arroz e legumes - R$ 29,90</h3>
-          <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+               alt="Frango grelhado com arroz branco, legumes salteados e molho especial">
+          <h3>Frango grelhado com arroz e legumes - R$ 29,90</h3>
+          <ul>
             <li>Peito de frango grelhado</li>
             <li>Arroz branco</li>
             <li>Legumes salteados</li>
             <li>Molho especial</li>
           </ul>
-        </div>
+        </article>
 
         <!-- Salada tropical -->
-        <div class="bg-white p-8 rounded-lg shadow-lg">
+        <article class="menu-card">
           <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" 
-               alt="Salada tropical com frutas e folhas verdes" 
-               class="w-full h-64 object-cover rounded-md mb-6" />
-          <h3 class="text-2xl font-semibold mb-4">Salada tropical - R$ 22,90</h3>
-          <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+               alt="Salada tropical com folhas verdes, manga, abacaxi, castanhas e molho cítrico">
+          <h3>Salada tropical - R$ 22,90</h3>
+          <ul>
             <li>Folhas verdes</li>
             <li>Manga</li>
             <li>Abacaxi</li>
             <li>Castanhas</li>
             <li>Molho cítrico</li>
           </ul>
-        </div>
+        </article>
 
         <!-- Brigadeiro -->
-        <div class="bg-white p-8 rounded-lg shadow-lg">
+        <article class="menu-card">
           <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" 
-               alt="Brigadeiro gourmet" 
-               class="w-full h-64 object-cover rounded-md mb-6" />
-          <h3 class="text-2xl font-semibold mb-4">Brigadeiro gourmet - R$ 12,90</h3>
-          <ul class="list-disc list-inside space-y-2 text-gray-800 text-lg">
+               alt="Brigadeiro gourmet com chocolate belga, granulado especial e recheio cremoso">
+          <h3>Brigadeiro gourmet - R$ 12,90</h3>
+          <ul>
             <li>Chocolate belga</li>
             <li>Granulado especial</li>
             <li>Recheio cremoso</li>
           </ul>
-        </div>
+        </article>
       </div>
 
-      <!-- Card de ingredientes (separado, mas no grid principal para responsividade) -->
-      <div class="bg-white p-4 rounded-lg shadow-md">
+      <!-- Card de ingredientes (proporcional ao grid) -->
+      <aside class="ingredientes-card">
         <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b56f16c7-a017-4669-88f1-6c8232b72161.png" 
-             alt="Delicious grilled chicken breast with steaming rice, colorful steamed vegetables, and a side of fresh salad garnished with herbs" 
-             class="w-full h-48 object-cover rounded-md mb-4" />
-        <p class="text-sm text-gray-600">Prato principal saudável com toques naturais.</p>
-        <p class="mt-4 text-sm max-w-xs mx-auto font-semibold">Ingredientes:</p>
-        <ul class="list-disc list-inside text-sm max-w-xs mx-auto text-gray-700">
+             alt="Peito de frango grelhado com arroz, vegetais coloridos no vapor e salada fresca com ervas">
+        <p>Prato principal saudável com toques naturais.</p>
+        <p class="ingredientes-title">Ingredientes:</p>
+        <ul>
           <li>Peito de frango (sem pele)</li>
           <li>Arroz branco ou integral</li>
           <li>Brócolis</li>
@@ -103,34 +95,34 @@
           <li>Sal e pimenta-do-reino a gosto</li>
           <li>Ervas frescas (salsa, cebolinha, manjericão)</li>
         </ul>
-      </div>
+      </aside>
     </div>
   </section>
 
   <!-- Seção Localização -->
-  <section id="localizacao" class="py-8 px-4 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-4">Localização</h2>
-    <div class="bg-white p-4 rounded-lg shadow-md">
+  <section id="localizacao" role="region" aria-label="Localização">
+    <h2>Localização</h2>
+    <div class="map-card">
       <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d139899-d138-481a-97c1-182ce1e98e81.png" 
-           alt="Detailed street map showing Avenida Brasil in Bairro Jardim, Cidade Y, with markers for restaurants and nearby landmarks in a vibrant urban setting" 
-           class="w-full h-48 object-cover rounded-md mb-4" />
-      <p class="text-center">Avenida Brasil, 456 - Bairro Jardim, Cidade SP</p>
+           alt="Mapa detalhado da Avenida Brasil, 456, no Bairro Jardim, Cidade SP, com marcadores de restaurantes e pontos de referência próximos">
+      <p>Avenida Brasil, 456 - Bairro Jardim, Cidade SP</p>
     </div>
   </section>
-  <section id="contato" class="py-8 px-4 bg-gray-800 text-white max-w-4xl mx-auto rounded-lg">
-    <h2 class="text-3xl font-semibold text-center mb-4">Contato</h2>
-    <div class="text-center space-y-2">
+
+  <!-- Seção Contato -->
+  <section id="contato" role="region" aria-label="Contato">
+    <h2>Contato</h2>
+    <div class="contato-content">
       <p>Telefone: (21) 12345-6789</p>
       <p>Instagram: @deliciadosabor</p>
       <p>Email: deliciadosabor@gmail.com</p>
       <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f27b0c9-0ede-464c-9329-4146cefcf03a.png" 
-           alt="Contact image showing a friendly chef waving, with contact details overlay and tropical fruit backdrop symbolizing Brazilian hospitality" 
-           class="w-full h-48 object-cover rounded-md mt-4" />
+           alt="Chef amigável acenando, com detalhes de contato sobrepostos e fundo de frutas tropicais simbolizando hospitalidade brasileira">
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-4 text-center">
+  <footer role="contentinfo">
     <p>© 2025 Restaurante Delícia do Sabor</p>
   </footer>
 </body>

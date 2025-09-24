@@ -1,4 +1,4 @@
-/* CSS Base Original (preservado e expandido) */
+/* Reset e Base Proporcional */
 * {
   margin: 0;
   padding: 0;
@@ -6,204 +6,185 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif; /* Equivalente a font-sans */
-  background-color: #fef3c7; /* Equivalente a bg-yellow-100 */
-  color: #1f2937; /* Equivalente a text-gray-800 */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fef3c7; /* Amarelo claro proporcional ao tema */
+  color: #1f2937;
   line-height: 1.6;
-  padding: 20px;
+  padding: 1rem; /* Proporcional: 1rem em mobile, aumenta em desktop */
 }
 
+/* Header Proporcional */
 header {
-  background: linear-gradient(to right, #fb923c, #ef4444); /* Equivalente a bg-gradient-to-r from-orange-400 to-red-500 */
+  background: linear-gradient(to right, #fb923c, #ef4444);
   color: white;
   text-align: center;
-  padding: 3rem 1rem; /* py-12 (mantido para acomodar imagem grande) */
-  border-radius: 8px;
-  margin-bottom: 30px;
+  padding: 2rem 1rem; /* Proporcional: py-8 base */
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 header h1 {
-  font-size: 2.25rem; /* text-4xl */
+  font-size: 1.875rem; /* Proporcional: text-3xl em mobile, cresce em desktop */
   font-weight: bold;
-  margin-bottom: 0.5rem; /* mb-2 */
+  margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1rem; /* Proporcional: text-base */
   margin-bottom: 1rem;
 }
 
 header img {
-  width: 100%; /* w-full */
-  height: 20rem; /* UNIFORME: Mesmo tamanho dos pratos principais (h-80) */
+  width: 100%;
+  height: 15rem; /* Proporcional: Menor em mobile, cresce em desktop */
   object-fit: cover;
-  border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
-  margin-top: 1rem; /* mt-4 */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 }
 
+/* Seções Gerais Proporcionais */
 section {
-  margin: 30px 0;
+  margin: 2rem 0;
   background-color: #fff;
-  padding: 2rem 1rem; /* py-8 px-4 */
-  border-left: 5px solid #e67e22;
-  border-radius: 4px;
-  max-width: 56rem; /* max-w-4xl */
+  padding: 1.5rem 1rem; /* Proporcional: p-6 base */
+  border-left: 4px solid #e67e22; /* Borda sutil, proporcional */
+  border-radius: 0.5rem;
+  max-width: 56rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 h2 {
-  margin-bottom: 1rem; /* mb-4 */
+  margin-bottom: 1rem;
   color: #d35400;
-  font-size: 1.875rem; /* text-3xl */
-  font-weight: 600; /* font-semibold */
+  font-size: 1.5rem; /* Proporcional: text-2xl base */
+  font-weight: 600;
   text-align: center;
 }
 
-/* Grid principal do menu (equivalente a grid md:grid-cols-2 gap-6) */
+/* Grids Proporcionais no Menu */
 #menu .grid-principal {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem; /* gap-6 */
+  gap: 1rem; /* Proporcional: gap-4 em mobile */
 }
 
-@media (min-width: 768px) {
-  #menu .grid-principal {
-    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
-  }
-}
-
-/* Grid interno dos pratos (equivalente a grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-6) */
 #menu .grid-interno {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem; /* gap-8 */
-  padding: 1.5rem; /* p-6 */
+  gap: 1.5rem; /* Proporcional: gap-6 */
+  padding: 1rem;
 }
 
-@media (min-width: 768px) {
-  #menu .grid-interno {
-    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
-  }
-  
-  @media (min-width: 1024px) {
-    #menu .grid-interno {
-      grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
-    }
-  }
-}
-
-/* Cards dos pratos (bg-white p-8 rounded-lg shadow-lg) */
+/* Cards de Menu Proporcionais */
 .menu-card {
   background-color: #fff;
-  padding: 2rem; /* p-8 */
-  border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  padding: 1.5rem; /* Proporcional: p-6 */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .menu-card img {
-  width: 100%; /* w-full */
-  height: 20rem; /* UNIFORME: Tamanho base para pratos principais (h-80) */
+  width: 100%;
+  height: 15rem; /* Proporcional: Uniforme com outras imagens */
   object-fit: cover;
-  border-radius: 0.25rem; /* rounded-md */
-  margin-bottom: 1.5rem; /* mb-6 */
-}
-
-.menu-card h3 {
-  font-size: 1.5rem; /* text-2xl */
-  font-weight: 600; /* font-semibold */
-  margin-bottom: 1rem; /* mb-4 */
-  color: #d35400; /* Integrando tema original */
-}
-
-/* Listas nos cards (list-disc list-inside space-y-2 text-gray-800 text-lg) */
-.menu-card ul {
-  list-style: disc;
-  padding-left: 1.25rem; /* list-inside */
-}
-
-.menu-card li {
-  margin-bottom: 0.5rem; /* space-y-2 */
-  color: #1f2937; /* text-gray-800 */
-  font-size: 1.125rem; /* text-lg */
-  padding: 0.25rem 0; /* Ajuste fino para espaçamento */
-}
-
-/* Card de ingredientes (bg-white p-4 rounded-lg shadow-md) */
-.ingredientes-card {
-  background-color: #fff;
-  padding: 1.5rem; /* AUMENTADO: p-6 (era p-4) para acomodar imagem maior */
-  border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-}
-
-.ingredientes-card img {
-  width: 100%; /* w-full */
-  height: 20rem; /* UNIFORME: Mesmo tamanho dos pratos principais (era h-64) */
-  object-fit: cover;
-  border-radius: 0.25rem; /* rounded-md */
-  margin-bottom: 1rem; /* mb-4 */
-}
-
-.ingredientes-card p {
-  font-size: 0.875rem; /* text-sm */
-  color: #6b7280; /* text-gray-600 */
+  border-radius: 0.25rem;
   margin-bottom: 1rem;
 }
 
+.menu-card h3 {
+  font-size: 1.25rem; /* Proporcional: text-xl */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d35400;
+}
+
+.menu-card ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+.menu-card li {
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+  font-size: 1rem; /* Proporcional: text-base */
+}
+
+/* Card de Ingredientes Proporcional */
+.ingredientes-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ingredientes-card img {
+  width: 100%;
+  height: 15rem; /* Uniforme e proporcional */
+  object-fit: cover;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.ingredientes-card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
 .ingredientes-card .ingredientes-title {
-  margin-top: 1rem; /* mt-4 */
-  font-size: 0.875rem; /* text-sm */
-  max-width: 20rem; /* max-w-xs */
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+  max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 600; /* font-semibold */
 }
 
 .ingredientes-card ul {
   list-style: disc;
-  padding-left: 1.25rem; /* list-inside */
-  font-size: 0.875rem; /* text-sm */
-  max-width: 20rem; /* max-w-xs */
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  max-width: 20rem;
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  color: #374151; /* text-gray-700 */
+  text-align: left;
+  color: #374151;
 }
 
-/* Seção Localização (bg-white p-4 rounded-lg shadow-md) */
+/* Localização Proporcional */
 #localizacao .map-card {
   background-color: #fff;
-  padding: 1.5rem; /* AUMENTADO: p-6 (era p-4) para acomodar imagem maior */
-  border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 #localizacao img {
-  width: 100%; /* w-full */
-  height: 20rem; /* UNIFORME: Mesmo tamanho dos pratos principais (era h-64) */
+  width: 100%;
+  height: 15rem; /* Uniforme */
   object-fit: cover;
-  border-radius: 0.25rem; /* rounded-md */
-  margin-bottom: 1rem; /* mb-4 */
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 #localizacao p {
-  text-align: center;
   font-size: 1rem;
+  font-weight: 500;
 }
 
-/* Seção Contato (py-8 px-4 bg-gray-800 text-white max-w-4xl mx-auto rounded-lg) */
+/* Contato Proporcional */
 #contato {
-  background-color: #1f2937; /* bg-gray-800 */
+  background-color: #1f2937;
   color: white;
-  padding: 2.5rem 1rem; /* AUMENTADO: py-10 px-4 para acomodar imagem maior */
-  max-width: 56rem; /* max-w-4xl */
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.5rem; /* rounded-lg */
-  border-left: 5px solid #374151; /* Ajuste para combinar com tema de section */
+  padding: 2rem 1rem;
+  max-width: 56rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  border-left: 4px solid #374151;
   text-align: center;
 }
 
@@ -211,48 +192,75 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem; /* AUMENTADO: space-y-3 para melhor espaçamento com imagem maior */
+  gap: 0.5rem;
 }
 
 #contato p {
-  margin: 0.5rem 0; /* space-y-2 */
   font-size: 1rem;
+  margin: 0.25rem 0;
 }
 
 #contato img {
-  width: 100%; /* w-full */
-  height: 20rem; /* UNIFORME: Mesmo tamanho dos pratos principais (era h-64) */
+  width: 100%;
+  height: 15rem; /* Uniforme */
   object-fit: cover;
-  border-radius: 0.25rem; /* rounded-md */
-  margin-top: 1rem; /* mt-4 */
+  border-radius: 0.25rem;
+  margin-top: 1rem;
 }
 
-/* Footer (bg-gray-900 text-white py-4 text-center) */
+/* Footer Proporcional */
 footer {
   text-align: center;
-  color: #777;
-  margin-top: 40px;
-  background-color: #111827; /* bg-gray-900 */
+  background-color: #111827;
   color: white;
-  padding: 1rem; /* py-4 */
-  border-radius: 4px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
 }
 
-/* Responsividade Geral (para mobile/desktop) */
-@media (min-width: 768px) {
+footer p {
+  font-size: 0.875rem;
+}
+
+/* Media Queries para Proporcionalidade Responsiva */
+@media (min-width: 768px) 
   body {
-    padding: 40px;
+    padding: 2rem;
   }
   
   header {
-    padding: 3.5rem 2rem; /* Ajuste fino para desktop com imagens uniformes */
+    padding: 3rem 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.25rem; /* Aumenta proporcionalmente */
+  }
+  
+  header img,
+  .menu-card img,
+  .ingredientes-card img,
+  #localizacao img,
+  #contato img {
+    height: 20rem; /* Aumenta em tablet/desktop */
   }
   
   section {
-    padding: 2.5rem 2rem;
+    padding: 2rem 2rem;
+    border-left-width: 5px;
   }
   
-  #contato {
-    padding: 3rem 2rem; /* Ajuste para desktop */
+  h2 {
+    font-size: 1.875rem;
   }
-}
+  
+  #menu .grid-principal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  #menu .grid-interno {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  
