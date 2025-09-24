@@ -63,21 +63,23 @@ h2 {
   text-align: center;
 }
 
-/* Grids Proporcionais no Menu */
+/* Grid Principal do Menu (2 colunas em desktop para lados esquerdo/direito) */
 #menu .grid-principal {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem; /* Proporcional: gap-4 em mobile */
 }
 
-#menu .grid-interno {
+/* Colunas Laterais (3 itens cada, empilhados verticalmente) */
+.coluna-esquerda,
+.coluna-direita {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem; /* Proporcional: gap-6 */
-  padding: 1rem;
+  gap: 1.5rem; /* Proporcional: gap-6 entre itens de cada lado */
+  padding: 0; /* Sem padding extra para alinhamento perfeito */
 }
 
-/* Cards de Menu Proporcionais */
+/* Cards de Menu Proporcionais (usados em ambos os lados) */
 .menu-card {
   background-color: #fff;
   padding: 1.5rem; /* Proporcional: p-6 */
@@ -113,7 +115,7 @@ h2 {
   font-size: 1rem; /* Proporcional: text-base */
 }
 
-/* Card de Ingredientes Proporcional */
+/* Card de Ingredientes Proporcional (no lado direito, como terceiro item) */
 .ingredientes-card {
   background-color: #fff;
   padding: 1.5rem;
@@ -222,38 +224,5 @@ footer p {
   font-size: 0.875rem;
 }
 
-/* Media Queries para Proporcionalidade Responsiva */
-@media (min-width: 768px) 
-  body {
-    padding: 2rem;
-  }
-  
-  header {
-    padding: 3rem 2rem;
-  }
-  
-  header h1 {
-    font-size: 2.25rem; /* Aumenta proporcionalmente */
-  }
-  
-  header img,
-  .menu-card img,
-  .ingredientes-card img,
-  #localizacao img,
-  #contato img {
-    height: 20rem; /* Aumenta em tablet/desktop */
-  }
-  
-  section {
-    padding: 2rem 2rem;
-    border-left-width: 5px;
-  }
-  
-  h2 {
-    font-size: 1.875rem;
-  }
-  
-  #menu .grid-principal {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
+/* Media Queries para Proporcionalidade Responsiva (incluindo layout 3x3) */
+@media (min-width: 768px)
