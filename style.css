@@ -17,7 +17,7 @@ header {
   background: linear-gradient(to right, #fb923c, #ef4444); /* Equivalente a bg-gradient-to-r from-orange-400 to-red-500 */
   color: white;
   text-align: center;
-  padding: 2rem 1rem; /* py-8 px-4 */
+  padding: 3rem 1rem; /* py-12 (aumentado de py-8 para acomodar imagem maior) */
   border-radius: 8px;
   margin-bottom: 30px;
 }
@@ -35,7 +35,7 @@ header p {
 
 header img {
   width: 100%; /* w-full */
-  height: 16rem; /* h-64 */
+  height: 20rem; /* AUMENTADO: h-80 (era h-64) para imagem maior no header */
   object-fit: cover;
   border-radius: 0.5rem; /* rounded-lg */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
@@ -104,7 +104,7 @@ h2 {
 
 .menu-card img {
   width: 100%; /* w-full */
-  height: 16rem; /* h-64 */
+  height: 20rem; /* AUMENTADO: h-80 (era h-64) para imagens maiores nos pratos */
   object-fit: cover;
   border-radius: 0.25rem; /* rounded-md */
   margin-bottom: 1.5rem; /* mb-6 */
@@ -140,7 +140,7 @@ h2 {
 
 .ingredientes-card img {
   width: 100%; /* w-full */
-  height: 12rem; /* h-48 */
+  height: 16rem; /* AUMENTADO: h-64 (era h-48) para imagem maior no card de ingredientes */
   object-fit: cover;
   border-radius: 0.25rem; /* rounded-md */
   margin-bottom: 1rem; /* mb-4 */
@@ -183,7 +183,7 @@ h2 {
 
 #localizacao img {
   width: 100%; /* w-full */
-  height: 12rem; /* h-48 */
+  height: 16rem; /* AUMENTADO: h-64 (era h-48) para mapa maior */
   object-fit: cover;
   border-radius: 0.25rem; /* rounded-md */
   margin-bottom: 1rem; /* mb-4 */
@@ -221,7 +221,7 @@ h2 {
 
 #contato img {
   width: 100%; /* w-full */
-  height: 12rem; /* h-48 (aumentado de h-24 para proporção consistente com outras secundárias) */
+  height: 16rem; /* AUMENTADO: h-64 (era h-48) para imagem de contato maior */
   object-fit: cover;
   border-radius: 0.25rem; /* rounded-md */
   margin-top: 1rem; /* mt-4 */
@@ -245,7 +245,7 @@ footer {
   }
   
   header {
-    padding: 2.5rem 2rem; /* Ajuste fino para desktop */
+    padding: 3.5rem 2rem; /* Ajuste fino para desktop com imagem maior */
   }
   
   section {
